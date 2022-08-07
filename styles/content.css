@@ -1,0 +1,128 @@
+:root {
+  --bgcolor: #f7f8fa;
+  --main: #a69fec;
+  --mintyellow: #ffc87d;
+  --mintpink: #ffc0d1;
+  --mintgreen: #a6e9d8;
+  --darktext: #3b3b3b;
+}
+
+.content-container {
+  color: var(--darktext);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-head-text {
+  border-top: 1px solid lightgrey;
+  padding-top: 20px;
+  width: 80%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.content-grid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.content-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+
+
+.content-tag {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: var(--main);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 3px 10px;
+  color: white;
+  margin-left: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 14px;
+}
+
+.content-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  aspect-ratio: 1;
+}
+
+.content-image-container img {
+  width:  250px;
+}
+
+.content-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content-description {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.button-container {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.add-to-cart {
+  outline: 2px solid var(--mintyellow);
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  width: 100px;
+  padding: 5px 0;
+  font-size: 16px;
+  color: var(--mintyellow);
+  cursor: pointer;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.add-to-cart:active {
+  background-color: rgb(241, 241, 241);
+}
+
+.buy-now {
+  outline: 2px solid var(--mintyellow);
+  background-color: var(--mintyellow);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  padding: 5px 0;
+  width: 100px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.buy-now:active {
+  background-color: #fcbd66;
+}

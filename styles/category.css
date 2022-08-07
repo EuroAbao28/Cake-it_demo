@@ -1,0 +1,96 @@
+:root {
+  --bgcolor: #f7f8fa;
+  --main: #a69fec;
+  --mintyellow: #ffc87d;
+  --mintpink: #ffc0d1;
+  --mintgreen: #a6e9d8;
+  --darktext: #3b3b3b;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px sold black;
+  margin-top: 110px;
+}
+
+.category-header-text {
+  width: 80%;
+  font-size: 20px;
+  left: 0;
+  color: var(--darktext);
+  margin-bottom: 10px;
+}
+
+.category-cards-container {
+  display: grid;
+  column-gap: 40px;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.category-card-text {
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  color: var(--darktext);
+}
+
+.cake-card,
+.rollcake-card,
+.cupcake-card {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  }
+
+.cake-card {
+  background-color: var(--mintyellow);
+  transition: box-shadow .15s;
+}
+
+.cake-card:active {
+  background-color: #fcbd66;
+}
+
+.rollcake-card {
+  background-color: var(--mintpink);
+  transition: box-shadow .15s;
+}
+
+.rollcake-card:active {
+  background-color: #faafc3;
+}
+
+.cupcake-card {
+  background-color: var(--mintgreen);
+  transition: box-shadow .15s;
+}
+
+.cupcake-card:active {
+  background-color: #84e7ce;
+}
+
+.cake-card:hover,
+.rollcake-card:hover,
+.cupcake-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.category-rollcake-image {
+  height: 400px;
+  margin-left: -66%;
+  margin-top: -27%;
+}
+
+.category-cupcake-image {
+  width: 200px;
+}
